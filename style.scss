@@ -1,46 +1,69 @@
 * {
-    background: #151820;
-    color: white;
-    font-family: tahoma;
+	background: #151820;
+	color: white;
+	font-family: tahoma;
 }
-html, 
+html,
 body {
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
 }
-body{
-    display: flex;
-    position: relative;
-    align-items: center;
+body {
+	display: flex;
+	position: relative;
+	align-items: center;
 }
 main#log {
-    align-self: center;
-    vertical-align: middle;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    padding: 25px;
-    border: 2px solid whitesmoke;
-    border-radius: 8px;
-}
-form{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-input {
-    border: 1px solid whitesmoke;
-    padding: 5px;
-    border-radius: 8px;
-    margin: 10px auto;
-}
-input#login-btn:hover,input#login-btn:active{
-    background: #353840AA;
-}
-p#label{
-    margin: auto;
-    text-align: center;
+	align-self: center;
+	vertical-align: middle;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	padding: 25px;
+	border: 2px solid whitesmoke;
+	border-radius: 8px;
+
+	form {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		input {
+			border: 1px solid whitesmoke;
+			padding: 5px;
+			border-radius: 8px;
+			margin: 10px auto;
+
+			&:hover {
+				background: #353840aa;
+				cursor: pointer;
+			}
+			&:active {
+				background: #353840aa;
+				cursor: pointer;
+			}
+		}
+	}
+	form {
+		p {
+			margin: auto;
+			text-align: center;
+		}
+	}
+	p {
+		input {
+			padding: 0;
+			margin: 0;
+			border: none;
+			font-size: 16px;
+			text-decoration: underline;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
 }
