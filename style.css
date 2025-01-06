@@ -1,7 +1,8 @@
 * {
-	background: #151820;
+	background: #1e1e1e;
 	color: white;
 	font-family: tahoma;
+	font-size: 30px;
 }
 html,
 body {
@@ -15,10 +16,10 @@ body {
 	position: relative;
 	align-items: center;
 }
-body>div#debug {
-		position: absolute;
-		bottom: 10px;
-		left: 10px;
+body > div#debug {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
 }
 main#log {
 	align-self: center;
@@ -27,41 +28,174 @@ main#log {
 	display: flex;
 	align-items: center;
 	width: fit-content;
-	padding: 25px;
-	border: 2px solid whitesmoke;
-	border-radius: 8px;}
-
-main#log>form {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-}
-
-main#log>form>input {
-	border: 1px solid whitesmoke;
-	padding: 5px;
+	padding: 50px;
+	border: 2px solid #4caf50;
+	box-shadow: #4caf50 0 0 1000px, #4caf50 0 0 100px, #4caf50 0 0 15px;
 	border-radius: 8px;
-	margin: 10px auto;
+	background: #2a2a2a;
 }
-main#log>form>input:hover{
-	background: #353840aa;
+
+main#log > form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: #2a2a2a;
+}
+
+main#log > form > input {
+	border: 1px solid #4caf50;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: #4caf50 0 0 5px;
+	margin: 20px auto;
+	background-color: #3a3a3a;
+}
+main#log > form > input:hover {
+	background: #3a3a3aaa;
 	cursor: pointer;
 }
-main#log>form>input:active {
-	background: #353840aa;
+main#log > form > input:active {
+	background: #3a3a3aaa;
 	cursor: pointer;
 }
-main#log>form>p {	
+main#log > form > p {
 	margin: auto;
 	text-align: center;
+	background: #2a2a2a;
 }
 
-p>a {
+p > a {
 	padding: 0;
 	margin: 0;
-	font-size: 16px;
 	text-decoration: underline;
+	background: #2a2a2a;
 }
-p>a:hover {
+p > a:hover {
 	cursor: pointer;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #121212;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.messenger-container {
+	display: flex;
+	width: 90%;
+	height: 80%;
+	overflow: hidden;
+}
+
+.users-list {
+	flex: 1;
+	background-color: #1e1e1e;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	overflow-y: auto;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+.users-list .user {
+	background-color: #2a2a2a;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.users-list .user:hover {
+	background-color: #3a3a3a;
+}
+
+.users-list .user img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.chat-area {
+	flex: 2;
+	background-color: #222222;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	overflow-y: auto;
+	border-radius: 10px;
+}
+
+.chat-area .message {
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 8px;
+	max-width: 70%;
+}
+
+.chat-area .message.sent {
+	background-color: #4caf50;
+	align-self: flex-end;
+	color: #ffffff;
+}
+
+.chat-area .message.received {
+	background-color: #333333;
+	align-self: flex-start;
+}
+
+.chat-input {
+	margin-top: auto;
+	display: flex;
+	gap: 10px;
+}
+
+.chat-input input {
+	flex: 1;
+	padding: 10px;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	background-color: #333333;
+	color: #ffffff;
+}
+
+.chat-input button {
+	padding: 10px 20px;
+	border-radius: 8px;
+	border: none;
+	background-color: #4caf50;
+	color: #ffffff;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.chat-input button:hover {
+	background-color: #45a049;
+}
+#file-input {
+	display: none;
+}
+label {
+	background: #2a2a2a;
+}
+label > i {
+	background-color: #2a2a2a;
+	color: #4caf50;
+}
+label > i:hover {
+	color: #4caf5084;
 }
