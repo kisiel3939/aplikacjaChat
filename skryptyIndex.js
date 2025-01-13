@@ -3,7 +3,7 @@ function rejestracjaKonta() {
 }
 
 function zaloguj() {
-  console.log(2);
+  console.log(1);
 }
 
 //document.getElementById("loguj").style.display="none";
