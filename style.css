@@ -199,3 +199,11 @@ label > i {
 label > i:hover {
 	color: #4caf5084;
 }
+.chat-area .message.sent > p {
+	background-color: #4caf50;
+	align-self: flex-end;
+}
+
+.chat-area .message.received > p {
+	background-color: #333333;
+}
