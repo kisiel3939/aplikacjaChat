@@ -54,11 +54,12 @@ $conn->close();
 	<body>
 		<main id="log">
 			<form method="POST">
+                <p>Zaloguj się na stronie</p>
 				<input type="email" name="email" placeholder="Email" required><br>
 				<input type="password" name="password" placeholder="Password" required><br>
-				<button type="submit">Log In</button>
+				<input type="submit" value="Zaloguj się">
 				<p>
-					nie masz konta?
+					Nie masz konta?
 					<a href="rejestracja.php">załóż konto</a>
 				</p>
 			</form>
