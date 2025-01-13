@@ -73,6 +73,27 @@ p > a {
 p > a:hover {
 	cursor: pointer;
 }
+#file-input {
+	display: none;
+}
+label {
+	background: #2a2a2a;
+}
+label > i {
+	background-color: #2a2a2a;
+	color: #4caf50;
+}
+label > i:hover {
+	color: #4caf5084;
+}
+.chat-area .message.sent > p {
+	background-color: #4caf50;
+	align-self: flex-end;
+}
+
+.chat-area .message.received > p {
+	background-color: #333333;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -184,26 +205,16 @@ body {
 }
 
 .chat-input button:hover {
-	background-color: #45a049;
+	background-color: #4caf4f84;
 }
-#file-input {
+.sigma {
 	display: none;
 }
-label {
-	background: #2a2a2a;
-}
-label > i {
-	background-color: #2a2a2a;
+i {
+	padding-top: 7px;
+	padding-left: 6px;
 	color: #4caf50;
 }
-label > i:hover {
-	color: #4caf5084;
-}
-.chat-area .message.sent > p {
-	background-color: #4caf50;
-	align-self: flex-end;
-}
-
-.chat-area .message.received > p {
-	background-color: #333333;
+i:hover {
+	color: #4caf4f84;
 }
